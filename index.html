@@ -38116,9 +38116,19 @@ SaaSio - HR Management
 				}
 			});
 		});
+		   window.addEventListener('DOMContentLoaded', function () {
+      var img = document.getElementById('image17');
+      if (img) {
+        img.classList.add('animate-img');
+        img.addEventListener('animationend', function() {
+          img.classList.remove('animate-img');
+        });
+      }
+    });
 	</script>
 
 </body>
 
 
 </html>
+
